@@ -1,6 +1,7 @@
-package com.example.chris.repotest
+package com.example.chris.repotest.old
 
-class AnotherTestRepository : IRepository<Int, IRestProvider<Int>, ICacheProvider<Int>> {
+class AnotherTestRepository :
+    IRepository<Int, IRestProvider<Int>, ICacheProvider<Int>> {
     override val restProvider: IRestProvider<Int>
         get() = object : IRestProvider<Int> {
             override fun restBlabla() {

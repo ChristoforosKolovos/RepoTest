@@ -1,6 +1,7 @@
-package com.example.chris.repotest
+package com.example.chris.repotest.old
 
-class AccountCacheProvider : ICacheProvider<AccountDomainModel> {
+class AccountCacheProvider :
+    ICacheProvider<AccountDomainModel> {
     override fun cacheBlabla() {
     }
 

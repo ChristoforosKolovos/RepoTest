@@ -1,6 +1,7 @@
-package com.example.chris.repotest
+package com.example.chris.repotest.old
 
-class AccountRestProvider : IRestProvider<AccountDomainModel>{
+class AccountRestProvider :
+    IRestProvider<AccountDomainModel> {
     override fun restBlabla() {
     }
 
