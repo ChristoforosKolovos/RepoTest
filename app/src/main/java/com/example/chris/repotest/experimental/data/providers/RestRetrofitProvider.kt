@@ -1,5 +1,14 @@
 package com.example.chris.repotest.experimental.data.providers
 
-object Rest
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
-//todo Retrofit builder here
+object RestRetrofitProvider {
+    private const val BASE_URL = "https://jsonplaceholder.typicode.com/"
+
+    fun getRetrofitInstance(baseUrl: String = BASE_URL) = Retrofit.Builder()
+            .baseUrl(baseUrl)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+
+}
